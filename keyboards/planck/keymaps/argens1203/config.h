@@ -47,3 +47,5 @@
 
 // Most tactile encoders have detents every 4 stages
 #define ENCODER_RESOLUTION 4
+
+#define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
