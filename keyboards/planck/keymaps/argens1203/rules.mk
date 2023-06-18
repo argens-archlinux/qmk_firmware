@@ -1,2 +1,3 @@
-SRC += muse.c
-BACKLIGHT_ENABLE = yes
+ifeq ($(strip $(AUDIO_ENABLE)), yes)
+    SRC += muse.c
+endif
