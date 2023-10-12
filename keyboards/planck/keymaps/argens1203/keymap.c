@@ -359,6 +359,6 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
     [_QWERTY] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) }, // volume changes on base
     [_LOWER] =  { ENCODER_CCW_CW(KC_BRIGHTNESS_DOWN, KC_BRIGHTNESS_UP) }, // brightness changes on left
     [_RAISE] =  { ENCODER_CCW_CW(LCTL(LSFT(KC_TAB)), LCTL(KC_TAB)) }, // Browser tab change on right
-    [_ADJUST] = { ENCODER_CCW_CW(LALT(LSFT(KC_TAB)), LALT(KC_TAB)) }, // Application change on both
+    [_ADJUST] = { ENCODER_CCW_CW(KC_BRIGHTNESS_DOWN, KC_BRIGHTNESS_UP) }, // brightness changes on left
 };
 #endif
