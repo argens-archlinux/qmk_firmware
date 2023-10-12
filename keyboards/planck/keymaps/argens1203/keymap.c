@@ -356,9 +356,9 @@ bool music_mask_user(uint16_t keycode) {
 
 #if defined(ENCODER_MAP_ENABLE)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
-    [_QWERTY] =   { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) }, // volume changes on base
-    [_RAISE] =  { ENCODER_CCW_CW(RGB_VAD, RGB_VAI) }, // brightness changes on left
-    [_LOWER] =  { ENCODER_CCW_CW(RGB_VAD, RGB_VAI) }, // brightness changes on right
+    [_QWERTY] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) }, // volume changes on base
+    [_RAISE] =  { ENCODER_CCW_CW(KC_BRIGHTNESS_DOWN, KC_BRIGHTNESS_UP) }, // brightness changes on left
+    [_LOWER] =  { ENCODER_CCW_CW(RGB_VAD, RGB_VAI) }, // RGB brightness changes on right
     [_ADJUST] = { ENCODER_CCW_CW(RGB_RMOD, RGB_MOD)}, // RGB mode
 };
 #endif
